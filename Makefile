@@ -1,6 +1,6 @@
-FIGURES_DIR = ./figures
+FIGURES_DIR = ./src/visualizations
 BUILD_DIR = ./build
-SLIDES = ./slides.md
+SLIDES = ./src/slides.md
 CSS = assets/stylesheets/style.css
 
 clean:
@@ -8,14 +8,14 @@ clean:
 	mkdir $(BUILD_DIR)
 
 figures: clean			
-		$(foreach file, $(wildcard $(FIGURES_DIR)/*), python $(file) build/$(notdir $(basename $(file))).html;)
+	$(foreach file, $(wildcard $(FIGURES_DIR)/*), python $(file) build/$(notdir $(basename $(file))).html;)
 
 html: figures		
-		pandoc \
-		--to revealjs  -o $(BUILD_DIR)/index.html $(SLIDES) \
-		--mathjax \
-		--standalone \
-		--css=$(CSS) \
-		--css=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css \
-		-V revealjs-url=https://revealjs.com		
-		cp -r assets build/assets
+	pandoc \
+	--to revealjs  -o $(BUILD_DIR)/index.html $(SLIDES) \
+	--mathjax \
+	--standalone \
+	--css=$(CSS) \
+	--css=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css \
+	-V revealjs-url=https://revealjs.com		
+	cp -r assets build/assets
