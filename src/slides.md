@@ -21,9 +21,9 @@ transition: fade # none/fade/slide/convex/concave/zoom
 
 This work and the underlying source code is available on [<i class="fab fa-github-square"></i>GitHub](https://github.com/bonartm/present).
  
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
-[![](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+[![](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 :::::
 
@@ -40,7 +40,7 @@ This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 Inter
 ### Videos
 
 
-<iframe data-autoplay width="100%" height="400px" src="http://www.youtube.com/embed/Wfoy_OvNDvw"></iframe>
+<iframe data-autoplay width="100%" height="400px" src="https://www.youtube.com/embed/Wfoy_OvNDvw"></iframe>
 
 
 
