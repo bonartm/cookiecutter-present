@@ -1,0 +1,4 @@
+pandoc
+plotly
+pandas
+folium
