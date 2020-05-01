@@ -2,7 +2,7 @@
 
 ![Build and deploy](https://github.com/bonartm/cookiecutter-present/workflows/Build%20and%20deploy/badge.svg?branch=master)
 
-Create and publish beautiful online presentations in 30 seconds. 
+Personal template to create and publish beautiful online presentations in less than 30 seconds. 
 
 ## Workflow
 
