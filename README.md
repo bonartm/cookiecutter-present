@@ -1,26 +1,33 @@
-# present
+# Cookiecutter Present
 
-![Build and deploy](https://github.com/bonartm/cookiecutter-present/workflows/Build%20and%20deploy/badge.svg?branch=master)
+Cookiecutter template for creating and deploying beautiful static html slides
 
-Personal template to create and publish beautiful online presentations in less than 30 seconds. 
 
-## Workflow
+## Features
 
-1. Prepare your slides in the `slides.md`
-    - edit the [options for reveal.js](https://github.com/hakimel/reveal.js#configuration) in the `yml` header
-    - look at the example slides for an overview of markdown features
+- Build html slides from markdown with [pandoc](https://pandoc.org/) and [reveal.js](https://github.com/hakimel/reveal.js/)
+- Include interactive graphs and maps with [plotly](https://plotly.com/python/) or [folium](https://python-visualization.github.io/folium/)
+- Ready for continous deployment with GitHub Actions and Pages
 
-2. Optional: Write some code that generates visualizations with plotly or folium
-    - look at the example files in the `visualizations` folder
-    
-3. Optional: Test your static site locally
-    - check that [pandoc](https://pandoc.org/installing.html) is installed
-    - run `make html`
-    - open the `build/index.html` with a web-browser
-    
-4. Optional: Add images or custom css to the `assets` folder
-    
-5. Push updates to Github. An automatic workflow is triggered that
-    - builds the slides
-    - deploys everything to gh-pages branch
+
+## Quickstart
+
+Install Cookiecutter with 
+
+```
+pip install -U cookiecutter
+```
+
+Generate presentation project with 
+
+```
+cookiecutter https://github.com/bonartm/cookiecutter-present.git
+```
+
+Then:
+- Create a repo and push project files
+- [Enable GitHub Pages](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) in the repo's settings.
+- Choose the `gh-pages` branch as publishing source.
+- Your slides are allready deployed and online.
+- To build a local version of the slides, install [pandoc](https://pandoc.org/) and run `make html`.
 

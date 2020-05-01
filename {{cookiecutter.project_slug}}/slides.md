@@ -1,8 +1,8 @@
 ---
-author: Malte Bonart
-title: reveal.js and plotly
-subtitle: <i class="fas fa-code"></i>
-date: 2020
+author: {{cookiecutter.full_name}}
+title: {{cookiecutter.project_name}}
+subtitle: {{cookiecutter.project_short_description}}
+date: {{cookiecutter.date}}
 # https://github.com/hakimel/reveal.js#configuration
 theme: sky
 slide-level: 3

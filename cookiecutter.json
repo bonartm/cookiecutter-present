@@ -1,0 +1,11 @@
+{
+    "full_name": "Malte Bonart",
+    "email": "malte@spiced-academy.com",
+    "date": "{% now 'utc', '%Y' %}",
+    "github_username": "bonartm",
+    "project_name": "present",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "project_short_description": "Create und publish presentations",
+    "build_and_publish_with_github": "y",
+    "_extensions": ["jinja2_time.TimeExtension"]
+}
