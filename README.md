@@ -1,5 +1,7 @@
 # Cookiecutter Present
 
+![Build](https://github.com/bonartm/cookiecutter-present/workflows/Build/badge.svg)
+
 Cookiecutter template for creating and deploying beautiful static html slides
 
 
@@ -25,9 +27,11 @@ cookiecutter https://github.com/bonartm/cookiecutter-present.git
 ```
 
 Then:
+
 - Create a repo and push project files
 - [Enable GitHub Pages](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) in the repo's settings.
 - Choose the `gh-pages` branch as publishing source.
 - Your slides are allready deployed and online.
 - To build a local version of the slides, install [pandoc](https://pandoc.org/) and run `make html`.
+- Edit slides in the `slides.md`
 
