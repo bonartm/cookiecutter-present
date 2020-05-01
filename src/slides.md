@@ -11,36 +11,90 @@ progress: true
 slideNumber: true
 hash: true
 navigationMode: linear
+autoPlayMedia: true
 transition: fade # none/fade/slide/convex/concave/zoom
 ---
 
 ---
 
-<div class="smallfont">
-<p>This work and the underlying source code is available on <a href="https://github.com/bonartm/present"> <i class="fab fa-github-square"></i>GitHub</a>.</p>
- 
-<p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+::::: {.smallfont}
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />
-</div>
+This work and the underlying source code is available on [<i class="fab fa-github-square"></i>GitHub](https://github.com/bonartm/present).
+ 
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+[![](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+
+:::::
+
+
 
 ### Tables
 
-&nbsp; | A | B
-:---| :---: | :---:
-<i class="fas fa-clock"></i> | 100 | 400
-<i class="fas fa-plus"></i> | 200 | 300n
+| | A | B |
+| :---| :---: | :---: |
+| <i class="fas fa-clock"></i> | 100 | 400 |
+| <i class="fas fa-plus"></i> | 200 | 300n |
+
+
+### Videos
+
+
+<iframe data-autoplay width="100%" height="400px" src="http://www.youtube.com/embed/Wfoy_OvNDvw"></iframe>
+
+
+
+### Fragments
+
+::: incremental
+
+- Eat spaghetti
+- Drink wine
+- Do something else
+
+:::
 
 
 ### Plots
 
 <iframe scrolling="no" style="border:none;" seamless="seamless" data-src="example.html" height="450" width="100%"></iframe>
 
-<div class="smallfont">
+::::: {.smallfont}
 This shows an example of including a plotly graph in a reveal.js presentation
-</div>
+:::::
+
 
 ### {data-background-iframe="map.html"}
 
+### Math
+
+$$
+f(x, y) = \frac{\sqrt{x^2+y^2}}{x+y}
+$$
+
+### Code
+
+```python
+def fun(a, b):
+    print('add numbers')
+    return a+b
+fun(2, 2)
+```
+
+### DataFrame converted to markdown
+
+```python
+print(df.to_markdown())   
+```
+
+|    | animal_1   | animal_2   |
+|---:|:-----------|:-----------|
+|  0 | elk        | dog        |
+|  1 | pig        | quetzal    |
+
+
+### Images
+
+![example image](assets/images/example.jpg "example image"){ width=40% }
 
  
