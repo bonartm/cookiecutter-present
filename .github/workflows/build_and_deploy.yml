@@ -33,8 +33,16 @@ jobs:
         sudo dpkg -i pandoc-2.9.2.1-1-amd64.deb
     - name: Run cookiecutter
       run: |
-        cookiecutter --no-input https://github.com/bonartm/cookiecutter-present.git
+        cd ..
+        cookiecutter --no-input cookiecutter-present
     - name: Build slides
       run: |
         cd present
         make html
+    - name: Deploy slides
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ '{{' }} secrets.GITHUB_TOKEN {{ '}}' }}
+        publish_dir: ./build/
+
+
