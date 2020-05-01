@@ -57,14 +57,14 @@ This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 Inter
 
 ### Plots
 
-<iframe scrolling="no" style="border:none;" seamless="seamless" data-src="example.html" height="450" width="100%"></iframe>
+<iframe scrolling="no" style="border:none;" seamless="seamless" data-src="visualizations/example.html" height="450" width="100%"></iframe>
 
 ::::: {.smallfont}
 This shows an example of including a plotly graph in a reveal.js presentation
 :::::
 
 
-### {data-background-iframe="map.html"}
+### {data-background-iframe="visualizations/map.html"}
 
 ### Math
 

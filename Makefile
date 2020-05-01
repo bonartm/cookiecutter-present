@@ -1,14 +1,15 @@
-FIGURES_DIR = ./src/visualizations
-BUILD_DIR = ./build
-SLIDES = ./src/slides.md
+FIGURES_DIR = visualizations
+BUILD_DIR = build
+SLIDES = slides.md
 CSS = assets/stylesheets/style.css
 
 clean:
 	rm -r -f $(BUILD_DIR)
 	mkdir $(BUILD_DIR)
+	mkdir $(BUILD_DIR)/$(FIGURES_DIR)
 
 figures: clean			
-	$(foreach file, $(wildcard $(FIGURES_DIR)/*), python $(file) build/$(notdir $(basename $(file))).html;)
+	$(foreach file, $(wildcard $(FIGURES_DIR)/*), python $(file) $(BUILD_DIR)/$(FIGURES_DIR)/$(notdir $(basename $(file))).html;)
 
 html: figures		
 	pandoc \
@@ -18,4 +19,4 @@ html: figures
 	--css=$(CSS) \
 	--css=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css \
 	-V revealjs-url=https://revealjs.com		
-	cp -r assets build/assets
+	cp -r assets $(BUILD_DIR)/assets
