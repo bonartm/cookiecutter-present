@@ -4,7 +4,7 @@ title: {{cookiecutter.project_name}}
 subtitle: {{cookiecutter.project_short_description}}
 date: {{cookiecutter.date}}
 # https://github.com/hakimel/reveal.js#configuration
-theme: sky
+theme: black
 slide-level: 3
 highlight-style: breezeDark
 progress: true
@@ -19,7 +19,7 @@ transition: fade # none/fade/slide/convex/concave/zoom
 
 ::::: {.smallfont}
 
-This work and the underlying source code is available on [<i class="fab fa-github-square"></i>GitHub](https://github.com/bonartm/present).
+This work and the underlying source code is available on [<i class="fab fa-github-square"></i>GitHub](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}).
  
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
