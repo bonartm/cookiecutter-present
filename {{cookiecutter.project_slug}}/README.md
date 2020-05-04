@@ -19,7 +19,7 @@ git push origin master
 2. [Enable GitHub Pages](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) in the repo's settings.
     - Wait until the `gh-pages` branch becomes available.
     - Choose the `gh-pages` branch as publishing source.
-    - Your slides are allready deployed and online. You can view them [here](https://{{cookiecutter.github_username}}github.io//{{cookiecutter.project_slug}}/#/title-slide).
+    - Your slides are allready deployed and online. You can view them [here](https://{{cookiecutter.github_username}}.github.io/{{cookiecutter.project_slug}}/#/title-slide).
     
 3. Prepare your slides in the `slides.md`
     - edit the [options for reveal.js](https://github.com/hakimel/reveal.js#configuration) in the `yml` header
