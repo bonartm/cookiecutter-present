@@ -3,8 +3,8 @@ author: {{cookiecutter.full_name}}
 title: {{cookiecutter.project_name}}
 subtitle: {{cookiecutter.project_short_description}}
 date: {{cookiecutter.date}}
-# https://github.com/hakimel/reveal.js#configuration
-theme: black
+# have a look at the options here: https://github.com/hakimel/reveal.js#configuration
+theme: black # white/league/beige/sky/night/serif/simple/solarized
 slide-level: 3
 highlight-style: breezeDark
 progress: true
@@ -57,14 +57,24 @@ This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 Inter
 
 ### Plots
 
-<iframe scrolling="no" style="border:none;" seamless="seamless" data-src="visualizations/example.html" height="450" width="100%"></iframe>
+<iframe scrolling="no" style="border:none;" seamless="seamless" data-src="visualizations/plotly_example.html" height="450" width="100%"></iframe>
 
 ::::: {.smallfont}
-This shows an example of including a plotly graph in a reveal.js presentation
+`.py` scripts in the `visualizations` folder are automatically executed during build. `.html` files can be included in an `iframe`.
+:::::
+
+### Plots - prebuild
+
+<iframe scrolling="no" style="border:none;" seamless="seamless" data-src="visualizations/plotly_example_pre_build.html" height="450" width="100%"></iframe>
+
+::::: {.smallfont}
+You can also place any other `.html` file in the visualizations folder and include them in an `iframe`.
 :::::
 
 
+
 ### {data-background-iframe="visualizations/map.html"}
+
 
 ### Math
 

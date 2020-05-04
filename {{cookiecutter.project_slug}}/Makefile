@@ -9,7 +9,8 @@ clean:
 	mkdir $(BUILD_DIR)/$(FIGURES_DIR)
 
 figures: clean			
-	$(foreach file, $(wildcard $(FIGURES_DIR)/*), python $(file) $(BUILD_DIR)/$(FIGURES_DIR)/$(notdir $(basename $(file))).html;)
+	$(foreach file, $(wildcard $(FIGURES_DIR)/*.py), python $(file) $(BUILD_DIR)/$(FIGURES_DIR)/$(notdir $(basename $(file))).html;)
+	$(foreach file, $(wildcard $(FIGURES_DIR)/*.html), cp $(file) $(BUILD_DIR)/$(FIGURES_DIR)/$(notdir $(basename $(file))).html;)
 
 html: figures		
 	pandoc \
